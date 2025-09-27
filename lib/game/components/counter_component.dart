@@ -1,4 +1,4 @@
-import 'package:dawnforge/game/game.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/components.dart';
 
 class CounterComponent extends PositionComponent

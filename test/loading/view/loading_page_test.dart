@@ -5,12 +5,11 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/cache.dart';
 import 'package:flutter/widgets.dart' hide Image;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
-import 'package:dawnforge/gen/assets.gen.dart';
-import 'package:dawnforge/loading/loading.dart';
 
 import '../../helpers/helpers.dart';
 

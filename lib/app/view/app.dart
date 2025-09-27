@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:dawnforge/l10n/l10n.dart';
-import 'package:dawnforge/loading/loading.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

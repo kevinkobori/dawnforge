@@ -1,5 +1,4 @@
-import 'package:dawnforge/game/entities/unicorn/behaviors/tapping_behavior.dart';
-import 'package:dawnforge/gen/assets.gen.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/components.dart';
 import 'package:flame/sprite.dart';
 import 'package:flame_behaviors/flame_behaviors.dart';

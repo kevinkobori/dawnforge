@@ -1,6 +1,4 @@
-import 'package:dawnforge/l10n/l10n.dart';
-import 'package:dawnforge/loading/loading.dart';
-import 'package:dawnforge/title/title.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,5 +1,5 @@
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dawnforge/app/app.dart';
 
 void main() {
   group('App', () {

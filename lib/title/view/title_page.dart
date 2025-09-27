@@ -1,5 +1,4 @@
-import 'package:dawnforge/game/game.dart';
-import 'package:dawnforge/l10n/l10n.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flutter/material.dart';
 
 class TitlePage extends StatelessWidget {

@@ -1,6 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
-import 'package:dawnforge/game/game.dart';
-import 'package:dawnforge/gen/assets.gen.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame_behaviors/flame_behaviors.dart';

@@ -4,14 +4,13 @@
 import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/cache.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame_test/flame_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:dawnforge/game/game.dart';
-import 'package:dawnforge/l10n/l10n.dart';
 
 class _MockAppLocalizations extends Mock implements AppLocalizations {}
 

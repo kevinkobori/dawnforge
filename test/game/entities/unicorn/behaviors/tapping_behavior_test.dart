@@ -4,15 +4,13 @@
 import 'dart:ui';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flame/cache.dart';
 import 'package:flame/game.dart';
 import 'package:flame_test/flame_test.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:dawnforge/game/entities/unicorn/behaviors/behaviors.dart';
-import 'package:dawnforge/game/game.dart';
-import 'package:dawnforge/l10n/l10n.dart';
 
 class _FakeAssetSource extends Fake implements AssetSource {}
 

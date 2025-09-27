@@ -1,10 +1,8 @@
+import 'package:dawnforge/dawnforge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
-import 'package:dawnforge/game/cubit/cubit.dart';
-import 'package:dawnforge/l10n/l10n.dart';
-import 'package:dawnforge/loading/loading.dart';
 
 import 'helpers.dart';
 

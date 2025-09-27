@@ -1,7 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:bloc_test/bloc_test.dart';
+import 'package:dawnforge/dawnforge.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:dawnforge/loading/loading.dart';
 
 class MockPreloadCubit extends MockCubit<PreloadState>
     implements PreloadCubit {}
