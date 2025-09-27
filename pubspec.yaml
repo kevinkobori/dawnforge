@@ -1,6 +1,6 @@
 name: dawnforge
 description: A Very Good Flame Game
-version: 1.0.0+1
+version: 1.0.1+1
 publish_to: none
 
 environment:
@@ -24,7 +24,9 @@ dependencies:
 
 dev_dependencies:
   bloc_test: ^10.0.0
+  build_runner: ^2.4.13
   flame_test: ^2.0.3
+  flutter_gen_runner: ^5.7.0
   flutter_test:
     sdk: flutter
   mockingjay: ^2.0.0

@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dawnforge/l10n/l10n.dart';
 import 'package:dawnforge/loading/loading.dart';
 import 'package:dawnforge/title/title.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoadingPage extends StatefulWidget {
   const LoadingPage({super.key});

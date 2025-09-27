@@ -1,5 +1,5 @@
-import 'package:flame/components.dart';
 import 'package:dawnforge/game/game.dart';
+import 'package:flame/components.dart';
 
 class CounterComponent extends PositionComponent
     with HasGameReference<Dawnforge> {

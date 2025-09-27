@@ -31,7 +31,7 @@ $ flutter run --flavor staging --target lib/main_staging.dart
 $ flutter run --flavor production --target lib/main_production.dart
 ```
 
-_\*Dawnforge works on iOS, Android, Web, and Windows._
+_\*Dawnforge works on iOS, Android, Web, MacOS, and Windows._
 
 ---
 
@@ -52,6 +52,88 @@ $ genhtml coverage/lcov.info -o coverage/
 # Open Coverage Report
 $ open coverage/index.html
 ```
+
+---
+
+## Working with Assets 🎨
+
+This project uses [flutter_gen](https://pub.dev/packages/flutter_gen) to generate type-safe access to assets. All assets are automatically generated into `lib/gen/assets.gen.dart`.
+
+### Adding New Assets
+
+1. Add your asset files to the appropriate folder:
+
+   - Images: `assets/images/`
+   - Audio: `assets/audio/`
+   - Other files: `assets/`
+
+2. Make sure the asset folder is declared in `pubspec.yaml`:
+
+```yaml
+flutter:
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/licenses/poppins/
+```
+
+3. Generate the assets code:
+
+```sh
+dart run build_runner build
+```
+
+### Using Generated Assets
+
+Import the generated assets:
+
+```dart
+import 'package:dawnforge/gen/assets.gen.dart';
+```
+
+#### Images
+
+```dart
+// Display an image widget
+Assets.images.unicornAnimation.image()
+
+// Get image path as string
+Assets.images.unicornAnimation.path
+
+// Use as ImageProvider
+Assets.images.unicornAnimation.provider()
+
+// With custom properties
+Assets.images.unicornAnimation.image(
+  width: 100,
+  height: 100,
+  fit: BoxFit.cover,
+)
+```
+
+#### Audio Files
+
+```dart
+// Get audio file path for audioplayers
+final audioPath = Assets.audio.background;
+
+// Or use with flame_audio
+FlameAudio.play(Assets.audio.background);
+```
+
+#### Other Assets
+
+```dart
+// Access license files
+final licenseText = Assets.licenses.poppins.ofl;
+```
+
+### Benefits of Generated Assets
+
+- ✅ **Type Safety**: Compile-time errors if assets don't exist
+- ✅ **IDE Support**: Auto-completion and refactoring
+- ✅ **No Typos**: Eliminates string-based asset path errors
+- ✅ **Easy Maintenance**: Automatic updates when assets change
 
 ---
 

@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:bloc/bloc.dart';
+import 'package:dawnforge/gen/assets.gen.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flame/cache.dart';
 import 'package:flutter/widgets.dart';
-import 'package:dawnforge/gen/assets.gen.dart';
 
 part 'preload_state.dart';
 
