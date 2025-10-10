@@ -7,11 +7,11 @@ import 'package:flame_audio/bgm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class GamePage extends StatelessWidget {
-  const GamePage({super.key});
+class GameScreen extends StatelessWidget {
+  const GameScreen({super.key});
 
   static Route<void> route() {
-    return MaterialPageRoute<void>(builder: (_) => const GamePage());
+    return MaterialPageRoute<void>(builder: (_) => const GameScreen());
   }
 
   @override

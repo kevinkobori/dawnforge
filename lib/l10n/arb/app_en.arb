@@ -6,15 +6,15 @@
   },
   "titleAppBarTitle": "Dawnforge",
   "@titleAppBarTitle": {
-    "description": "Text shown in the AppBar of the Title Page"
+    "description": "Text shown in the AppBar of the Title Screen"
   },
   "titleButtonStart": "Start",
   "@titleButtonStart": {
-    "description": "Text shown in the start Button of the Title Page"
+    "description": "Text shown in the start Button of the Title Screen"
   },
   "loading": "Loading {label}...",
   "@loading": {
-    "description": "Text for the loading page",
+    "description": "Text for the Loading Screen",
     "placeholders": {
       "label": {
         "type": "String",

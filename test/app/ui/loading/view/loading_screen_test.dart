@@ -11,14 +11,14 @@ import 'package:flutter/widgets.dart' hide Image;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
 
-import '../../helpers/helpers.dart';
+import '../../../../helpers/helpers.dart';
 
 class _MockImages extends Mock implements Images {}
 
 class _MockAudioCache extends Mock implements AudioCache {}
 
 void main() {
-  group('LoadingPage', () {
+  group('LoadingScreen', () {
     late PreloadCubit preloadCubit;
     late _MockImages images;
     late _MockAudioCache audio;
@@ -42,7 +42,7 @@ void main() {
     });
 
     testWidgets('basic layout', (tester) async {
-      await tester.pumpApp(LoadingPage(), preloadCubit: preloadCubit);
+      await tester.pumpApp(LoadingScreen(), preloadCubit: preloadCubit);
 
       expect(find.byType(AnimatedProgressBar), findsOneWidget);
       expect(find.textContaining('Loading'), findsOneWidget);
@@ -55,7 +55,7 @@ void main() {
         return find.textContaining('Loading').evaluate().first.widget as Text;
       }
 
-      await tester.pumpApp(LoadingPage(), preloadCubit: preloadCubit);
+      await tester.pumpApp(LoadingScreen(), preloadCubit: preloadCubit);
 
       expect(textWidgetFinder().data, 'Loading  ...');
 
@@ -81,7 +81,7 @@ void main() {
       ).thenAnswer((_) async {});
 
       await tester.pumpApp(
-        LoadingPage(),
+        LoadingScreen(),
         preloadCubit: preloadCubit,
         navigator: navigator,
       );

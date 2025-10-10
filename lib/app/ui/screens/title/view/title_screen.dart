@@ -1,11 +1,11 @@
 import 'package:dawnforge/dawnforge.dart';
 import 'package:flutter/material.dart';
 
-class TitlePage extends StatelessWidget {
-  const TitlePage({super.key});
+class TitleScreen extends StatelessWidget {
+  const TitleScreen({super.key});
 
   static Route<void> route() {
-    return MaterialPageRoute<void>(builder: (_) => const TitlePage());
+    return MaterialPageRoute<void>(builder: (_) => const TitleScreen());
   }
 
   @override
@@ -34,7 +34,7 @@ class TitleView extends StatelessWidget {
           onPressed: () async {
             await Navigator.of(
               context,
-            ).pushReplacement<void, void>(GamePage.route());
+            ).pushReplacement<void, void>(GameScreen.route());
           },
           child: Center(child: Text(l10n.titleButtonStart)),
         ),

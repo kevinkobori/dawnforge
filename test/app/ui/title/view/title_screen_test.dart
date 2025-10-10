@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
 
-import '../../helpers/helpers.dart';
+import '../../../../helpers/helpers.dart';
 
 void main() {
-  group('TitlePage', () {
+  group('TitleScreen', () {
     testWidgets('renders TitleView', (tester) async {
-      await tester.pumpApp(const TitlePage());
+      await tester.pumpApp(const TitleScreen());
       expect(find.byType(TitleView), findsOneWidget);
     });
   });

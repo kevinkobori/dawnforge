@@ -56,7 +56,7 @@ void main() {
         );
   });
 
-  group('GamePage', () {
+  group('GameScreen', () {
     late PreloadCubit preloadCubit;
     late Images images;
 
@@ -78,7 +78,7 @@ void main() {
         Builder(
           builder: (context) => Scaffold(
             floatingActionButton: FloatingActionButton(
-              onPressed: () => Navigator.of(context).push(GamePage.route()),
+              onPressed: () => Navigator.of(context).push(GameScreen.route()),
             ),
           ),
         ),
@@ -90,13 +90,13 @@ void main() {
       await tester.pump();
       await tester.pump();
 
-      expect(find.byType(GamePage), findsOneWidget);
+      expect(find.byType(GameScreen), findsOneWidget);
 
       await tester.pumpWidget(Container());
     });
 
     testWidgets('renders GameView', (tester) async {
-      await tester.pumpApp(const GamePage(), preloadCubit: preloadCubit);
+      await tester.pumpApp(const GameScreen(), preloadCubit: preloadCubit);
       expect(find.byType(GameView), findsOneWidget);
     });
   });
