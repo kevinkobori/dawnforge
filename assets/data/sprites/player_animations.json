@@ -1,0 +1,44 @@
+{
+  "imagePath": "images/characters/player_spritesheet.png",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "framesPerRow": 8,
+  "totalFrames": 32,
+  "animations": {
+    "idle": {
+      "name": "idle",
+      "startFrame": 0,
+      "endFrame": 3,
+      "duration": 1.0,
+      "loop": true
+    },
+    "walk": {
+      "name": "walk",
+      "startFrame": 8,
+      "endFrame": 15,
+      "duration": 0.8,
+      "loop": true
+    },
+    "run": {
+      "name": "run",
+      "startFrame": 16,
+      "endFrame": 23,
+      "duration": 0.6,
+      "loop": true
+    },
+    "attack": {
+      "name": "attack",
+      "startFrame": 24,
+      "endFrame": 27,
+      "duration": 0.4,
+      "loop": false
+    },
+    "death": {
+      "name": "death",
+      "startFrame": 28,
+      "endFrame": 31,
+      "duration": 1.2,
+      "loop": false
+    }
+  }
+}
